@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Formulario</title>
+  </head>
+  
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-register {
+  width: 600px;
+  background-color:#123b6d;
+  padding: 30px;
+  margin:auto;
+  margin-top:100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color:white;
+}
+
+.form-register #title {
+  font-size:22px;
+  margin-botton:20px;
+  text-align: center;
+}
+
+.form-register #description {
+  font-size:18px;
+  margin-botton:20px;
+  text-align: center;
+}
+
+.controls, .p {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: orange;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+  </style>
+
+  <body> 
+  <section class="form-register">
+  <form id="survey-form">
+    <h1 id="title"> Survey</h1>
+    <p id="description"> Podría contestar el formulario </p>
+    
+  <label class="controls" id="name-label" for="name">Name:</label>
+  <input class="controls" type="text" name="nombre" id="name" placeholder="Ingrese su nombre" required>
+  <label class="controls" id="email-label" for="email">Email:</label>
+  <input class="controls" type="email" name="correo" id="email" placeholder="Ingrese su correo" required>
+  <label class="controls" id="number-label" for="number">Age:</label>
+  <input class="controls" type="number" name="edad" id="number" placeholder="Ingrese su edad" required>
+    
+    <p> Cual es tu personaje favorito ? </p>
+    <select class="controls">
+    <option value="value1">Selecciona un opción</option>
+    <option value="value2" selected>Jon Snow</option>
+    <option value="value3">Tyrion Lannister</option>
+    </select>
+   
+  <p> Cual es tu elemento favorito ? </p>
+  <div class="controls">
+  <input type="radio" id="fuego" name="elemento" value="Fuego">
+  <label for="fuego">Fuego</label><br>
+  <input type="radio" id="agua" name="elemento" value="Agua">
+  <label for="agua">Agua</label><br>
+  <input type="radio" id="tierra" name="elemento" value="Tierra">
+  <label for="tierra">Tierra</label><br>
+  </div>
+  
+  <p> Dónde le gustaría viajar ? </p>  
+  <div class="controls">
+  <input type="checkbox" id="colombia" name="colombia1" value="Colombia">
+  <label for="colombia">Colombia</label><br>
+  <input type="checkbox" id="argentina" name="argentina1" value="Argentina">
+  <label for="argentina">Argentina</label><br> 
+  </div>
+  
+   <p>Nos interesa tu opinión</p>
+  <textarea class="controls" name="message" rows="5" cols="10">
+  </textarea>  
+    
+  <input class="botons" type="submit" value="registrar">  
+  </form>
+  </section>  
+  </body>
+  <html>
